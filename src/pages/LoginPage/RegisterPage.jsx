@@ -29,7 +29,7 @@ const RegisterPage = () => {
             icon: "success",
           });
           setTimeout(() => {
-            navigate("/auth/login");
+            navigate("/auth/signin");
           }, 2000);
         }
       } catch (error) {
