@@ -65,9 +65,9 @@ const PickList = () => {
     <div className=" bg-slate-200 max-w-screen-xl flex flex-wrap justify-between mx-auto p-4 rounded-2xl items-center">
       <div className="w-64">
         <h3 className="text-xl font-semibold">Thông tin người đặt vé:</h3>
-        <p className="text-red-500 font-medium">{userInfor.hoTen}</p>
-        <p className="text-red-500 font-medium">{userInfor.email}</p>
-        <p className="text-red-500 font-medium">{userInfor.soDT}</p>
+        <p className="text-red-500 font-medium">{userInfor?.hoTen}</p>
+        <p className="text-red-500 font-medium">{userInfor?.email}</p>
+        <p className="text-red-500 font-medium">{userInfor?.soDT}</p>
       </div>
       <div className="w-64">
         <h3 className="text-xl font-semibold">Thông tin rạp:</h3>
