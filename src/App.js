@@ -6,8 +6,9 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import RegisterPage from "./pages/LoginPage/RegisterPage";
 import HomePage from "./pages/HomePage/HomePage";
 import DetailPage from "./pages/DetailPage/DetailPage";
-import CheckUser from "./pages/CheckPage/CheckUser";
+import CheckUser from "./pages/HOC/CheckUser";
 import ScreenPage from "./pages/ScreenPage/ScreenPage";
+import UserProfile from "./pages/UserProfile/UserProfile";
 
 function App() {
   return (
@@ -21,6 +22,14 @@ function App() {
             element={
               <CheckUser>
                 <ScreenPage />
+              </CheckUser>
+            }
+          />
+          <Route
+            path="profile"
+            element={
+              <CheckUser>
+                <UserProfile />
               </CheckUser>
             }
           />

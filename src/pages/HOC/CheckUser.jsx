@@ -11,7 +11,7 @@ const CheckUser = ({ children }) => {
       navigate("/auth/signin");
       Swal.fire({
         title: "Vui lòng đăng nhập!",
-        text: "Bạn cần phải đăng nhập để đạt vé",
+        text: "Bạn cần phải đăng nhập để mở trang này",
         icon: "error",
         timer: 2000,
         timerProgressBar: true,

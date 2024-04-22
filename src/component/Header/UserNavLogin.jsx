@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { logOutAction } from "../../redux/userReducer/userSlice";
+import { NavLink } from "react-router-dom";
 
 const UserNavLogin = () => {
   const dispatch = useDispatch();
@@ -9,7 +10,10 @@ const UserNavLogin = () => {
   });
   return (
     <div>
-      <span className="py-2 px-3 mx-3 font-semibold cursor-pointer text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+      <NavLink
+        to={"/profile"}
+        className="py-2 px-3 mx-3 font-semibold cursor-pointer text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -26,7 +30,7 @@ const UserNavLogin = () => {
         </svg>
 
         {userInfor.hoTen}
-      </span>
+      </NavLink>
       <button
         onClick={() => {
           dispatch(logOutAction());
