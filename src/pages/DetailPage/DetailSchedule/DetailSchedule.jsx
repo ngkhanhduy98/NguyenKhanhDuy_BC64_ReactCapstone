@@ -20,7 +20,7 @@ const DetailSchedule = ({ idMovie }) => {
         <img
           className="w-12 h-12 mb-3 rounded-full shadow-lg"
           src={data.logo}
-          alt="Bonnie image"
+          alt=""
         />
         <h5 className="mb-1 text-sm font-medium text-gray-900 dark:text-white">
           {data.tenHeThongRap}
@@ -49,7 +49,7 @@ const DetailSchedule = ({ idMovie }) => {
           <img
             className="object-cover rounded-t-lg h-auto w-32 md:rounded-none md:rounded-s-lg"
             src={dataCumRap.hinhAnh}
-            alt
+            alt=""
           />
           <div className="flex flex-col p-4">
             <h5 className=" mb-3 text-2xl font-bold text-gray-900 dark:text-white">

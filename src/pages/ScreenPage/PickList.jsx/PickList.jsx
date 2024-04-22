@@ -4,6 +4,7 @@ import { authSer } from "../../../services/authSer";
 import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import { ticketLocal } from "../../../services/ticketLocal";
 
 const PickList = () => {
   const navigate = useNavigate();
@@ -28,7 +29,8 @@ const PickList = () => {
         timer: 5000,
         timerProgressBar: true,
       }).then(() => {
-        navigate("/");
+        ticketLocal.set(DanhSachVe);
+        navigate("/profile");
       });
     } else {
       Swal.fire({
